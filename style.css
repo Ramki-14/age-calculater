@@ -6,9 +6,8 @@
 }
 body{
     background-color: darkgrey;
-    display: flex;
-    justify-content: center;
-    align-items:center ;
+    display: grid;
+    place-items:center;
     height: 100vh;
 }
 .container{
@@ -17,13 +16,9 @@ body{
     height: 400px;
 box-shadow: 2px 2px 5px;
 display: grid;
-background-color: rgb(214, 210, 210);
+background-color: rgb(223, 218, 218);
 border-radius: 10px;
 
-}
-@media screen and (max-width:540px){
-.container{
-    width:calc(100%-40px)
 }
 
 .input-wrapper{
@@ -33,6 +28,7 @@ border-radius: 10px;
 }
 .input-wrapper input{
     width: 80%;
+
     display: block;
     text-align: center;
     margin: 40px auto 20px;
@@ -43,11 +39,13 @@ font-weight: bolder;
 }
 
 
+
 .input-wrapper button{
     background-color: #000;
     color: #fff;
     padding: 5px 20px;
 width: 30%;
+min-width: fit-content;
 align-self: center;
 font-size: 20px;
 border-radius: 10px;
@@ -80,3 +78,16 @@ span{
 p{
     text-align: center;
 }
+@media screen and (max-width:540px){
+    .container{
+        width: calc(100% - 40px);
+    }
+    .input-wrapper input{
+        width: 60%;
+    }
+    .year , .month , .date{
+        width: 80px;
+        height: 80px;
+        column-gap: 10px;
+    }
+    }
