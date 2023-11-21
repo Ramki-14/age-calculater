@@ -12,7 +12,7 @@ body{
     height: 100vh;
 }
 .container{
-    min-width: 300px;
+    
     width: 500px;
     height: 400px;
 box-shadow: 2px 2px 5px;
@@ -21,6 +21,11 @@ background-color: rgb(214, 210, 210);
 border-radius: 10px;
 
 }
+@media screen and (max-width:450px){
+.container{
+    width:calc(100%-40px)
+}
+
 .input-wrapper{
     display: flex;
     justify-content: space-evenly;
