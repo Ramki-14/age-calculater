@@ -21,7 +21,7 @@ background-color: rgb(214, 210, 210);
 border-radius: 10px;
 
 }
-@media screen and (max-width:450px){
+@media screen and (max-width:540px){
 .container{
     width:calc(100%-40px)
 }
